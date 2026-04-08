@@ -1,18 +1,5 @@
-<?php
 
-$host = "localhost";
-$db = "nama_database_kalian";
-$user = "root";
-$pass = "" ;
-
-try {
-    $pdo = new PDO ("mysql:host=$host;dbname =$db", $user , $pass);
-    $pdo->setAttribute(PDO:ATTR_ERRMODE, PDO:ERRMODE_EXCEPTION);
- } catch (PDOException $e)  {
-    die("koneksi gagal:" . $e->getMessage());
- }
-?>
- 
+// dibuat royyan 2532057
 <?php
 require_once 'config.php'; 
 
@@ -36,6 +23,7 @@ echo "<table border='1' cellpadding='10' cellspacing='0'>
             <th>Aksi</th>
         </tr>";
 
+//dibuat nurul aulia 2532069
 if (isset(POST[
     spyload =[
     
@@ -46,6 +34,7 @@ if (isset(POST[
     simpanDatabase($pdo, mahasiswa', spyload)
     header("location")
 
+    //dibuat syabrina athiqa 2532051
 if (isset($_GET['status'] && $_GET['status'] == 'sukses')
 
 try {

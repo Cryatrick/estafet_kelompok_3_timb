@@ -1,0 +1,14 @@
+
+//dibuat oleh yasin 2532065 kan oleh kevin pratama 2532056
+<?php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "db_mahasiswa";
+
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Koneksi gagal: " . $e->getMessage());
+}
